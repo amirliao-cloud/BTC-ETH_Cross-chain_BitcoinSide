@@ -402,7 +402,7 @@ class Tx:
         # append the SIGHASH_ALL to der (use SIGHASH_ALL.to_bytes(1, 'big'))
         sig = der + SIGHASH_ALL.to_bytes(1, 'big')
         # calculate the sec
-        # sec = private_key.point.sec()
+        sec = private_key.point.sec()
         # initialize a new script with [sig, sec] as the cmds
         script_sig = Script([sig, secret, sec, 0x00]) # < sig, secret, op_false>
         # change input's script_sig to new script
