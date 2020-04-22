@@ -22,7 +22,9 @@ class S256Field(FieldElement):
 
 # public key class
 class S256Point(Point):
-    def __init__(self, x, y, a=None, b=None):
+    a = None
+    b = None
+    def __init__(self, x, y, a, b):
         a, b = S256Field(A), S256Field(B)
         if type(x) == int:
             super().__init__(x=S256Field(x), y=S256Field(y), a=a, b=b)
