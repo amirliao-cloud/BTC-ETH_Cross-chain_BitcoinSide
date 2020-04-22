@@ -33,9 +33,9 @@ if __name__ == '__main__':
     # create a transaction using that UTXO as an input
     # broadcast the tx message on the testnet
     # secret = little_endian_to_int(hash256(b'abelyang@astri.org'))
-    private_key = PrivateKey(secret=secret)
+    # private_key = PrivateKey(secret=secret)
     # public_key = private_key.point.sec()
-    # # private_key: cUz2mXMT2jyqdwXuFeZgy71tvF96vnvAmH8KvtsMdzhY2AtrJUJv
+    private_key: cUz2mXMT2jyqdwXuFeZgy71tvF96vnvAmH8KvtsMdzhY2AtrJUJv
     # my_addr = private_key.point.address(testnet=True)
 
     my_addr = 'n4mNGWL1ycLk45xgvEEn8V2uKbnpa7wr93'
