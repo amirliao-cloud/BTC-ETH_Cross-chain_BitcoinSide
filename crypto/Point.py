@@ -35,14 +35,14 @@ class Point:
             slope = (other.y - self.y)/(other.x - self.x)
             x_3 = slope * slope - self.x - other.x
             y_3 = slope * (self.x - x_3) - self.y
-            return __class__(x_3, y_3, self.a, self.b)
+            return self.__class__(x_3, y_3, self.a, self.b)
         if self == other and self.y != 0:
             slope = (3 * (self.x ** 2) + self.a) / (2 * self.y)
             x_3 = slope ** 2 - 2 * self.x
             y_3 = slope * (self.x - x_3) - self.y
-            return __class__(x_3, y_3, self.a, self.b)
+            return self.__class__(x_3, y_3, self.a, self.b)
         if self == other and self.y == 0 * self.x:
-            return __class__(None, None, self.a, self.b)
+            return self.__class__(None, None, self.a, self.b)
 
     def __repr__(self):
         return 'Point ({}, {})'.format(self.x, self.y)
