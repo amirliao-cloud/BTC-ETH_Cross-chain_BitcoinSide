@@ -35,9 +35,9 @@ if __name__ == '__main__':
     # secret = little_endian_to_int(hash256(b'abelyang@astri.org'))
     # private_key = PrivateKey(secret=secret)
     # public_key = private_key.point.sec()
-    private_key: cUz2mXMT2jyqdwXuFeZgy71tvF96vnvAmH8KvtsMdzhY2AtrJUJv
+    # private_key: cUz2mXMT2jyqdwXuFeZgy71tvF96vnvAmH8KvtsMdzhY2AtrJUJv
     # my_addr = private_key.point.address(testnet=True)
-
+    private_key = 'cUz2mXMT2jyqdwXuFeZgy71tvF96vnvAmH8KvtsMdzhY2AtrJUJv'
     my_addr = 'n4mNGWL1ycLk45xgvEEn8V2uKbnpa7wr93'
     #my_addr = 'n4kJxHoZC9uTjfYAmeXSnHP9ss6YqiQja8'
     my_addr_h160 = decode_base58(my_addr) # hash160 of the public key
